@@ -32,6 +32,16 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 
 ######################################################################
 
+## Cloned repos
+
+contents = Lectures
+contents: $(contents)
+
+$(contents):
+	git clone https://github.com/Bio1M/$@ 
+
+######################################################################
+
 ### Makestuff
 
 -include $(ms)/git.mk
