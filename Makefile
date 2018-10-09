@@ -35,11 +35,15 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 ## Cloned repos
 
 clonedirs += Lectures
-contents = Lectures
+contents = Lectures Archive
 contents: $(contents)
 
 $(contents):
 	git clone https://github.com/Bio1M/$@ 
+
+### Test material. Not sure why it's named 2017; was I planning to open it?
+tests:
+	git clone https://dushoff@bitbucket.org/dushoff/1m_2017.git $@
 
 ######################################################################
 
