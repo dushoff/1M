@@ -34,7 +34,7 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 
 ## Cloned repos
 
-clonedirs += Lectures
+clonedirs += Lectures tests
 contents = Lectures Archive
 contents: $(contents)
 
