@@ -47,6 +47,14 @@ tests:
 
 ######################################################################
 
+screen_session: Lectures.screen web.screen tests.screen
+
+web.screen:
+	cd Lectures/web && screen -t "lweb"
+
+%.screen: %
+	cd $< && screen -t "$<"
+
 ### Makestuff
 
 -include $(ms)/git.mk
