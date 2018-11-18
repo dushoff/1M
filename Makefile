@@ -34,10 +34,11 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 
 ## Cloned repos
 
+contents = Lectures Archive Tests
+contents: $(contents)
 clonedirs += Lectures
 clonedirs += Tests
-contents = Lectures Archive
-contents: $(contents)
+Ignore += Archive
 
 ## Archive is meant as a repo for old test material. Not sure why it's necessary (instead of sharing by web and using version control ...)
 
@@ -51,7 +52,7 @@ Ignore += tests ## Delete soon 2018 Nov 18 (Sun)
 
 ######################################################################
 
-screen_session: Lectures.screen web.screen tests.screen
+screen_session: Lectures.screen web.screen Tests.screen
 
 web.screen:
 	cd Lectures/web && screen -t "lweb"
