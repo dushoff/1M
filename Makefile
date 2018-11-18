@@ -34,16 +34,20 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 
 ## Cloned repos
 
-clonedirs += Lectures tests
+clonedirs += Lectures
+clonedirs += Tests
 contents = Lectures Archive
 contents: $(contents)
+
+## Archive is meant as a repo for old test material. Not sure why it's necessary (instead of sharing by web and using version control ...)
 
 $(contents):
 	git clone https://github.com/Bio1M/$@ 
 
-### Test material. Not sure why it's named 2017; was I planning to open it?
-tests:
-	git clone https://dushoff@bitbucket.org/dushoff/1m_2017.git $@
+### Test material. Recently renamed 2018 Nov 18 (Sun)
+Tests:
+	git clone https://dushoff@bitbucket.org/dushoff/1m_private.git $@
+Ignore += tests ## Delete soon 2018 Nov 18 (Sun)
 
 ######################################################################
 
