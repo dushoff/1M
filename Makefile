@@ -34,7 +34,8 @@ $(ms)/%.mk: $(ms) $(ms)/Makefile ;
 
 ## Cloned repos
 
-contents = Lectures Archive Tests
+## contents should only include things whose names match
+contents = Lectures Archive 
 contents: $(contents)
 clonedirs += Lectures
 clonedirs += Tests
