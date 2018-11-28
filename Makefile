@@ -55,11 +55,11 @@ Ignore += tests ## Delete soon 2018 Nov 18 (Sun)
 
 screen_session: Lectures.screen web.screen Tests.screen
 
-web.screen:
-	cd Lectures/web && screen -t "lweb"
+web.screen: Lectures Lectures/web
+	cd Lectures/web && screen -t "lweb" bash -cl "vmt index.md" ##
 
 %.screen: %
-	cd $< && screen -t "$<"
+	cd $< && screen -t "$<" bash -cl "vmt" ##
 
 ### Makestuff
 
