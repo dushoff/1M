@@ -8,6 +8,8 @@ current: target
 
 # stuff
 
+Sources += notes.md
+
 Sources += Makefile 
 Ignore += .gitignore
 
