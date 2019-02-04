@@ -1,5 +1,6 @@
 # 1M
 ### Hooks for the editor to set the default target
+### Zero-content, org only
 
 current: target
 -include target.mk
@@ -10,7 +11,7 @@ current: target
 
 # stuff
 
-Sources += Makefile .ignore 
+Sources += Makefile 
 Ignore += .gitignore
 
 msrepo = https://github.com/dushoff
