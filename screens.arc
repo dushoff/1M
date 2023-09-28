@@ -10,6 +10,6 @@ bbTests: https://lost.on.bitbucket
 
 XX. Tests: https://github.com/Bio1M/Tests.git
 
-## Test archive; see also web
+## Test archive; see also ../web
 XX. Archive: https://github.com/Bio1M/Archive.git
 
