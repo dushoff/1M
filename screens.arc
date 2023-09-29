@@ -6,7 +6,7 @@ Tests was on bitbucket, no longer a repo. Maybe make it a Dropbox?
 * Make a new repo seems easiest
 * /home/dushoff/Downloads/dushoff-1m_private-33bd58982a51.zip
 
-bbTests: https://lost.on.bitbucket
+bbTests: https://bitbucket.org/dushoff/1m_private/src/master/
 
 XX. Tests: https://github.com/Bio1M/Tests.git
 
