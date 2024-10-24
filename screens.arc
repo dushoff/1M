@@ -10,4 +10,4 @@ XX. oldTests: https://github.com/Bio1M/oldTests.git
 ## Test archive; see also ../web
 XX. Archive: https://github.com/Bio1M/Archive.git
 
-XX. scantronCode
+scantronCode: https://github.com/dushoff/scantronCode
